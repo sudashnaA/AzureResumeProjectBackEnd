@@ -3,7 +3,8 @@ import json
 import azure.functions as func
 from azure.cosmos import exceptions, CosmosClient, PartitionKey
 import os
-
+#HTTP trigger function
+# Will increment the cosmodb count value by one when triggered
 def main(req: func.HttpRequest, doc:func.DocumentList) -> func.HttpResponse:
     
     logging.info('Python HTTP trigger function processed a request.')
